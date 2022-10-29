@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="main">
+            <label class="title">Register Form</label>
+            <form id="form" method="get" onsubmit="return checkForm()">
+                <div>
+                    <label>Name:</label>
+                    <input class="text" id="name" name="name" type="text">
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input class="text" id="email" name="email" type="text">
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input class="text" id="pass" name="pass" type="password">
+                </div>
+                <div>
+                    <label>Confirm Password:</label>
+                    <input class="text" id="passC" name="passC" type="password">
+                </div>
+                <input class="buttons" type="submit" id="submit" value="Go" style="height: 40px; width: 50px; font-size: 18px;"/>
+                <input class="buttons" type="button" id="signin" value="Sign In" onclick="location.href = 'index.html';"/>
+                <label id="error"></label>
+            </form>
+        </div>
+    </body>
+</html>
+<script src="register.js"></script>
+<style>
+    .main{
+        color: aliceblue;
+        margin: 18%;
+        margin-left: 27%;
+        margin-right: 27%;
+        padding-top: 20px;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #0059b3;
+        border-radius: 7px;
+        border: solid black;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #form > *{
+        margin: 15px;
+    }
+</style>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="main">
+            <label class="title">Login Form</label>
+            <form id="loginForm" method="get" onsubmit="return checkForm()">
+                <div>
+                    <label>Email:</label>
+                    <input class="text" id="email" name="email" type="text">
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input class="text" id="pass" name="pass" type="password">
+                </div>
+                <input class="buttons" type="submit" id="submit" value="Go" style="height: 50px; width: 70px; font-size: 22px;"/>
+                <input class="buttons" type="button" id="signup" value="Sign Up" onclick="location.href = 'register.html';"/>
+                <label id="error"></label>
+            </form>
+        </div>
+    </body>
+</html>
+<script src="script.js"></script>
+<style>
+    .main{
+        color: aliceblue;
+        margin: 18%;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 20px;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #0059b3;
+        border-radius: 7px;
+        border: solid black;
+    }
+    #loginForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #loginForm > *{
+        margin: 15px;
+    }
+</style>
